@@ -9,3 +9,5 @@ jQuery('ul li').addClass('emphasis') ;
 
 # Here we are loading the file from the server. So a user needs to redownload the code everytime he runs an application. Instead we can get a link of the google CDN, so instead of src="jquery-1.10.1.js" we can place  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script> 
 Beware, if we dnt have n internet connection, it will not run. But for a production purpose its a good idea. 
+
+# This edit is for the test of Github editing. Lets see now where it gets reflected. 
