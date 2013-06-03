@@ -27,3 +27,7 @@ $(document).ready(functionName);(
 $(function(){
 		// write anything as if you are writing in document.ready's function. Means the same. 
 });
+
+# This edit is for the test of Github editing. Lets see now where it gets reflected. 
+
+
