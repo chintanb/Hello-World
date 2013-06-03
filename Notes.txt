@@ -9,3 +9,21 @@ jQuery('ul li').addClass('emphasis') ;
 
 # Here we are loading the file from the server. So a user needs to redownload the code everytime he runs an application. Instead we can get a link of the google CDN, so instead of src="jquery-1.10.1.js" we can place  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script> 
 Beware, if we dnt have n internet connection, it will not run. But for a production purpose its a good idea. 
+
+# // $('li:first-child').addClass('emphasis') ;
+It will select the first child of its parent which <ul> in this case. 
+
+# IMP : Here, if we put the aforementioned snippet in <head> (i.e. Embedding it in the html itself), then it wont be applied. Because, this tries to work with the DOM, before it gets loaded. This will tell that hey JQeury, find a first child of the parent of li, but wait a minute, we havent discovered it yet. 
+Thats the reaseon why document.ready(function(){}); comes to the picture. That will wait until the DOM gets ready to be manipulated. 
+
+# We can create function in two ways. First is an anonymous function, that is frequent. 
+Second one gets cleared from the example. 
+
+var functionName = function(){
+}; 
+$(document).ready(functionName);(
+
+# Instead of document.ready we can simple use, 
+$(function(){
+		// write anything as if you are writing in document.ready's function. Means the same. 
+});

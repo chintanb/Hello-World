@@ -12,7 +12,8 @@ $(document).ready(function() {
    $('div').click(function() {
        $(this).toggle(1000);
    });
-   $('ul li').addClass('emphasis') ;
+   //$('ul li').addClass('emphasis') ;
+   $('li:first-child').addClass('emphasis') ;
 });
 
 
